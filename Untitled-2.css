@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&family=Rubik+Wet+Paint&family=Rubik:wght@900&display=swap');
+ body {
+	 height: 100vh;
+	 background-color: #a1b5ad;
+}
+ main {
+	 transform: rotate(-3deg);
+}
+ .card {
+	 background-color: #efdfdf;
+	 width: 90vmin;
+	 height: 50vh;
+	 overflow: hidden;
+	 position: relative;
+     margin: auto;
+	 border-bottom: 0.3vmin solid rgba(68, 35, 35, .15);
+	 box-shadow: rgba(34, 46, 44, .1) 0 1px 1px, rgba(34, 46, 44, .1) 0 3vmin 3vmin, rgba(34, 46, 44, .1) 0 6vmin 6vmin;
+}
+ .pattern {
+	 background-color: #b8d1d7;
+	 border-radius: 50%;
+	 position: absolute;
+	 z-index: 1;
+}
+ .pattern_tl {
+	 width: 12vmin;
+	 height: 12vmin;
+	 top: -6vmin;
+	 left: -6vmin;
+}
+ .pattern_bc {
+	 width: 28vmin;
+	 height: 28vmin;
+	 bottom: -22.4vmin;
+	 left: 44vmin;
+}
+ .circle {
+	 background-color: #ea7379;
+	 border-radius: 50%;
+	 position: absolute;
+	 z-index: 2;
+	 width: 60vmin;
+	 height: 60vmin;
+	 top: -10vmin;
+	 right: -1vmin;
+}
+ .eight {
+	 width: 32vmin;
+	 position: absolute;
+	 top: 4vmin;
+	 right: 13vmin;
+	 z-index: 3;
+	 transform: rotate(9deg);
+}
+ .cat {
+	 width: 40vmin;
+	 position: absolute;
+	 top: 12vmin;
+	 left: -2vmin;
+	 z-index: 3;
+}
+ h1, h2, p {
+	 margin: 0;
+	 font-weight: normal;
+	 position: absolute;
+	 z-index: 4;
+}
+ h1 {
+	 font-family: "Ribeye", cursive;
+	 color: #37566b;
+	 font-size: 3.25vmin;
+	 text-transform: lowercase;
+	 top: 3.75vmin;
+	 left: 6.75vmin;
+	 transform: rotate(-3.2deg);
+}
+ h2 {
+	 font-family: "Rubik", sans-serif;
+	 font-weight: 900;
+	 color: #77689b;
+	 font-size: 10vmin;
+	 text-transform: uppercase;
+	 bottom: 0;
+	 left: 4.65vmin;
+	 transform: rotate(-3deg);
+}
+ p {
+	 font-family: "Rubik Wet Paint", cursive;
+	 color: #00757d;
+	 font-size: 2vmin;
+	 text-transform: lowercase;
+	 bottom: 1.25vmin;
+	 right: 1.25vmin;
+}
+ 
+.title-love {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    font-size: 5vmin;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+#buttonContainer {
+  display: flex;
+  align-items: center;
+  height:15vh;
+  width: 100vw;
+}
+
+button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+}
+
+#myButton1 {
+  background-color: #ea7379;
+  color: white;
+  left: 45%; /* Set the left position of the first button */
+}
+
+#myButton1:focus {
+    background-color: #c96065;
+}
+
+#myButton2 {
+    z-index: 998;
+  background-color: #00757d;
+  color: white;
+  left: 55%; /* Set the left position of the second button */
+}
+#myButton2:hover {
+  top: calc(100% - 50px);
+  left: calc(100% - 50px);
+}
+
+#popupContainer {
+    display: none;
+    z-index: 999;
+    position: relative;
+}
+#popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 100px 180px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+input {
+    border: 1px solid #00757d;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.submit {
+    position: relative;
+    transform: translate(0);
+    margin-top: 20px;
+    background-color: #00757d;
+    color:  white;
+}
